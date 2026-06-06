@@ -1,0 +1,25 @@
+# GitHub Pages Jekyll configuration
+theme: null
+title: Human-AI Innovation Lab
+description: Advancing the frontiers of human-AI collaboration and artificial intelligence research
+url: https://Alice-Dong-Lab.github.io/Human-AI-Innovation-Lab
+
+# Build settings
+markdown: kramdown
+exclude:
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+
+author:
+  name: Human-AI Innovation Lab
+  email: lab@university.edu
