@@ -178,32 +178,48 @@ a:hover {
     color: var(--white);
 }
 
-.director-title {
-    font-size: 1.5rem;
+.lab-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.lab-affiliation {
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.director-affiliation {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 
-.awards-section {
+.directors-section {
     margin: 2rem 0;
+}
+
+.director-heading {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.directors-list {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-.award-item {
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: 0.75rem 1.5rem;
-    border-radius: 20px;
-    font-size: 0.95rem;
+.director-item {
+    display: flex;
+    align-items: center;
+}
+
+.director-name {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+    margin: 0;
 }
 
 .cta-buttons {
@@ -248,11 +264,12 @@ a:hover {
 .mission-statement h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .mission-statement p {
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 1rem;
+    text-align: justify;
 }
 
 /* Research Section */
@@ -402,10 +419,64 @@ a:hover {
     font-size: 0.9rem;
 }
 
+/* Publications Section */
+.publications-section {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.publications-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.publications-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.publications-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.pub-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    color: var(--white);
+}
+
+.pub-link i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pub-link span {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
 /* News Section */
 .news-section {
     padding: 80px 20px;
-    background-color: var(--white);
+    background-color: var(--lighter-bg);
 }
 
 .news-items {
@@ -415,11 +486,12 @@ a:hover {
 }
 
 .news-item {
-    background-color: var(--lighter-bg);
+    background-color: var(--white);
     padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid var(--primary-color);
     transition: transform 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
 .news-item:hover {
@@ -534,21 +606,20 @@ a:hover {
         font-size: 0.9rem;
     }
 
-    .director-info h1 {
+    .lab-title {
         font-size: 2.5rem;
     }
 
-    .director-title {
-        font-size: 1.2rem;
+    .lab-affiliation {
+        font-size: 1rem;
     }
 
-    .awards-section {
+    .directors-list {
         gap: 1rem;
     }
 
-    .award-item {
-        padding: 0.5rem 1rem;
-        font-size: 0.85rem;
+    .director-name {
+        font-size: 1rem;
     }
 
     .cta-buttons {
@@ -564,7 +635,8 @@ a:hover {
     .research-areas,
     .stats-grid,
     .links-row,
-    .news-items {
+    .news-items,
+    .publications-links {
         grid-template-columns: 1fr;
     }
 
@@ -573,6 +645,7 @@ a:hover {
     .research-section,
     .lab-stats,
     .quick-access,
+    .publications-section,
     .news-section {
         padding: 60px 20px;
     }
@@ -592,12 +665,12 @@ a:hover {
         gap: 0.5rem;
     }
 
-    .director-info h1 {
+    .lab-title {
         font-size: 1.8rem;
     }
 
-    .director-title {
-        font-size: 1rem;
+    .lab-affiliation {
+        font-size: 0.9rem;
     }
 
     .cta-buttons {
